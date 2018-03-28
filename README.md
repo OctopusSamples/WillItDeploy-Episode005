@@ -6,6 +6,8 @@ Will it deploy is a video series where we try to automate the deployment of diff
 
 ## Problem
 
+![Multi-Tenant architecture](images/Tenants-multipleapplication.png)
+
 ### Tech Stack
 
 Our app is a quote generator called [Random Quotes](https://github.com/OctopusSamples/WillItDeploy-Episode005). The application is relatively simple but it includes a number of common features that allows us to illustrate the complexities of multi-tenant deployments.
@@ -18,7 +20,7 @@ Features:
 
 Technologies:
 
-![SQL Server logo](images/sqlserver-logo.png "width=200")
+![SQL Server logo](images/sqlserver-logo.png)
 
 * Microsoft [ASP.NET Core 2.0](https://docs.microsoft.com/en-us/aspnet/core/) web app
 * [Entity Framework Core 2.0](https://docs.microsoft.com/en-us/ef/core/) framework
@@ -28,16 +30,18 @@ Kudos to our marketing manager [Andrew](https://twitter.com/andrewmaherbne) who 
 
 ### Deployment Target
 
-![Amazon web services logo](images/aws-logo.png "width=200")
+![Amazon web services logo](images/aws-logo.png)
 
 * AWS - [EC2](https://aws.amazon.com/ec2) virtual machine 
 * Microsoft [Windows Server 2016](https://www.microsoft.com/en-au/cloud-platform/windows-server)
 
 ## Solution
 
+![Octopus Multi-Tenant Deployments](images/octopus-first-class-tenants.png)
+
 So will it deploy? **Yes it will!** Our deployment process looks like the following.
 
-![Octopus deployment process](images/deployment-process.png "width=500")
+![Octopus deployment process](images/deployment-process.png)
 
 Then we add the following steps to successfully deploy our app.
 
@@ -49,8 +53,8 @@ Then we add the following steps to successfully deploy our app.
 
 This project uses the following variables, variable templates and common variable templates to store our app settings, database connection details and web app configuration.
 
-![Project variables](images/project-variables.png "width=500")
+![Project variables](images/project-variables.png)
 
-![Project variable templates](images/project-variable-templates.png "width=500")
+![Project variable templates](images/project-variable-templates.png)
 
-![Common variable templates](images/common-variable-templates.png "width=500")
+![Common variable templates](images/common-variable-templates.png)
