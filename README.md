@@ -37,9 +37,9 @@ Kudos to our marketing manager [Andrew](https://twitter.com/andrewmaherbne) who 
 
 ## Solution
 
-![Octopus Multi-Tenant Deployments](images/octopus-first-class-tenants.png)
-
 So will it deploy? **Yes it will!** Our deployment process looks like the following.
+
+![Octopus Multi-Tenant Deployments](images/octopus-first-class-tenants.png)
 
 ![Octopus deployment process](images/deployment-process.png)
 
